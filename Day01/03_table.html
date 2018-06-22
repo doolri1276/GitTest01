@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>테이블 연습</title>
+</head>
+<body>
+	<table border="5">
+		<tr>
+			<th>no</th>
+			<th>name</th>
+			<th>message</th>
+		</tr>
+
+		<tr>
+			<td>1</td>
+			<td>Sam</td>
+			<td>Hello.</td>
+		</tr>
+
+		<tr>
+			<td>2</td>
+			<td>Robin</td>
+			<td>Nice to meet you.</td>
+
+			<!-- 각 행(row)에 데이터(셀) 갯수가 다를 수 있음 -->
+
+			<td>2018-05-30</td>
+		</tr>
+	</table>
+
+	<!-- 셀 병합 -->
+
+	<table border="5">
+
+		<!-- caption의 작성 위치 상관없이 무조건 표의 상단에 위치. CSS를 배우면 위치 조정 가능. -->
+		<caption>
+			테이블의 제목
+		</caption>
+
+		<tr>
+			<!-- span은 한 줄만 있으면 적용이 인됨. -->
+			<td rowspan="2">111</td>
+			<td colspan="3">222</td>
+			<td>333</td>
+		</tr>
+
+		<tr>
+			<td>444</td>
+			<td>555</td>
+			<td>666</td>
+		</tr>
+		
+	</table>
+
+	<hr>
+
+	<!-- 테이블 <td></td>안에 다른 요소 넣기 -->
+	<table border="1" width="70%">
+		<tr>
+			<td width="30%">
+				<a href="http://www.naver.com">네이버</a>
+			</td>
+			<td>
+				<ul>
+					<li>aaa</li>
+					<li>bbb</li>
+					<li>ccc</li>
+				</ul>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<!-- <p>테이블 안에는 어떤 요소도 넣을 수 있다.</p> -->
+				<p>afehifohwifjiowefoiwejfowejfoiwejfioewjfiojweofijweiofjwefjewoijfowefjowefjowjfoeijfiowejfwejofijewoijfe</p>
+				<!--  한글은 줄을  -->
+			</td>
+			<td>
+				<img src="rumy.jpg" width="100%">
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
